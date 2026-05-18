@@ -28,10 +28,15 @@ The format follows a simple Keep a Changelog style.
 - Contributor workflow assets:
   - `CONTRIBUTING.md`
   - GitHub issue templates and PR template.
+- Installer support:
+  - Added `install.sh` for one-command Codex Skill installation.
+  - Documented git, no-git, local copy, and symlink installation flows.
 
 ### Changed
 
 - README updated for folder-based GitHub publishing flow.
+- README redesigned with a cleaner GitHub-style landing flow: quick start, decision table, workflow diagram, compact install section, output table, and collapsible examples.
+- README_EN refreshed with centered GitHub-style project headers and clearer quick-start sections.
 - Added placeholder clarification for `TODO` usage in templates.
 - `.gitignore` updated to exclude `*.skill.zip`.
 
