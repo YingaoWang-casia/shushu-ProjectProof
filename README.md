@@ -1,6 +1,6 @@
 <div align="center">
 
-# ProjectProof for Codex
+# 🚀 ProjectProof for Codex
 
 **项目证据官：把真实的小厂项目，打磨成能投、能讲、能抗追问的大厂面试材料。**
 
@@ -13,13 +13,15 @@
 ![Method](https://img.shields.io/badge/method-evidence--bound-orange)
 ![Status](https://img.shields.io/badge/status-active-success)
 
-[快速开始](#快速开始) · [为什么需要它](#为什么需要它) · [安装](#安装) · [使用模板](#使用模板) · [输出内容](#输出内容) · [Before / After](#before--after) · [English](README_EN.md)
+[快速开始](#quick-start) · [为什么需要它](#why-projectproof) · [安装](#installation) · [使用方式](#usage) · [输出内容](#outputs) · [Before / After](#before-after) · [English](README_EN.md)
 
 </div>
 
 ---
 
-## 快速开始
+<a id="quick-start"></a>
+
+## 🚀 快速开始
 
 推荐直接运行安装脚本：
 
@@ -53,7 +55,7 @@ ls ~/.codex/skills/bigtech-interview-project-upgrader/SKILL.md
 
 ---
 
-## 30 秒了解
+## 🧭 30 秒了解
 
 | 问题 | 回答 |
 | --- | --- |
@@ -63,11 +65,13 @@ ls ~/.codex/skills/bigtech-interview-project-upgrader/SKILL.md
 | 它最终产出什么？ | 简历 bullet 三档版本、面试追问树、回答防线、项目口述稿、补证据计划。 |
 | 它不做什么？ | 不虚构上线、指标、用户规模、个人贡献，也不把 demo 包装成生产系统。 |
 
-> ProjectProof 只升级真实经历的表达质量和证据链，不鼓励也不支持编造项目经历。
+> ⚠️ ProjectProof 只升级真实经历的表达质量和证据链，不鼓励也不支持编造项目经历。
 
 ---
 
-## 为什么需要它
+<a id="why-projectproof"></a>
+
+## ❓ 为什么需要它
 
 很多同学不是没有项目，而是项目一写进简历，就变成几句很难解释清楚的泛化描述：
 
@@ -97,7 +101,7 @@ ProjectProof 想解决的不是“怎么把话写得更漂亮”，而是：
 
 ---
 
-## 它是什么
+## 🧩 它是什么
 
 ProjectProof for Codex 是一个可以在 Codex 中直接使用的 Skill。
 
@@ -128,7 +132,7 @@ ProjectProof for Codex 是一个可以在 Codex 中直接使用的 Skill。
 
 ---
 
-## 它不是什么
+## 🚫 它不是什么
 
 | 容易误解 | 实际定位 |
 | --- | --- |
@@ -140,29 +144,31 @@ ProjectProof for Codex 是一个可以在 Codex 中直接使用的 Skill。
 
 ---
 
-## 它怎么工作
+## 🔁 它怎么工作
 
-```mermaid
-flowchart LR
-    A["JD / 简历原文 / 真实经历"] --> B["Truth Boundary"]
-    B --> C["Evidence Contract"]
-    C --> D["Production Gap"]
-    D --> E["Question Tree"]
-    E --> F["SP/SSP Scorecard"]
-    F --> G["Resume Bullets / Interview Pack / Upgrade Plan"]
+为了避免 Mermaid 图在不同 Markdown 环境里渲染不稳定，这里改成更稳的文字流程表：
+
+| 步骤 | 模块 | 作用 |
+| --- | --- | --- |
+| 1 | 输入信息 | 提供 JD、简历原文、真实经历、项目状态和已有证据。 |
+| 2 | Truth Boundary | 区分做过、参与过、了解过、补做后可写、当前不能写。 |
+| 3 | Evidence Contract | 给每条强表达绑定证据，例如代码、日志、截图、指标、bad case、日报或实验记录。 |
+| 4 | Production Gap | 找出 toy demo 和大厂生产系统之间的工程缺口。 |
+| 5 | Question Tree | 模拟真实项目深挖，生成面试官可能继续追问的问题链。 |
+| 6 | SP/SSP Scorecard | 判断项目竞争力、硬伤和补强优先级。 |
+| 7 | 输出结果 | 生成简历 bullet、面试回答、防线说明、口述稿和补强计划。 |
+
+一句话概括：
+
+```text
+输入真实经历 → 划清贡献边界 → 绑定证据 → 识别工程缺口 → 模拟追问 → 输出简历与面试材料
 ```
-
-| 模块 | 作用 |
-| --- | --- |
-| Truth Boundary | 区分做过、参与过、了解过、补做后可写、当前不能写。 |
-| Evidence Contract | 给每条强表达绑定证据：代码、日志、截图、指标、bad case、日报或实验记录。 |
-| Production Gap | 找出 toy demo 和大厂生产系统之间的工程缺口。 |
-| Question Tree | 模拟真实项目深挖，不是随机八股题库。 |
-| SP/SSP Scorecard | 判断项目竞争力、硬伤和补强优先级。 |
 
 ---
 
-## 安装
+<a id="installation"></a>
+
+## 📦 安装
 
 ### 推荐方式
 
@@ -227,7 +233,9 @@ bash install.sh
 
 ---
 
-## 使用方式
+<a id="usage"></a>
+
+## 🛠️ 使用方式
 
 ### 最小触发方式
 
@@ -278,7 +286,9 @@ bash install.sh
 
 ---
 
-## 输出内容
+<a id="outputs"></a>
+
+## 📤 输出内容
 
 信息足够时，ProjectProof 会输出一整套项目面试包：
 
@@ -293,7 +303,7 @@ bash install.sh
 
 ---
 
-## 核心能力
+## ✨ 核心能力
 
 ### 1. 先诊断，再改写
 
@@ -387,7 +397,7 @@ ProjectProof 会从岗位相关性、贡献清晰度、技术深度、工程闭�
 
 ---
 
-## 支持的项目类型
+## 🎯 支持的项目类型
 
 ProjectProof 适合处理以下类型的实习或项目经历：
 
@@ -402,7 +412,7 @@ ProjectProof 适合处理以下类型的实习或项目经历：
 
 ---
 
-## LLM 算法岗覆盖
+## 🧠 LLM 算法岗覆盖
 
 如果目标是 LLM / 大模型算法岗，它也覆盖：
 
@@ -422,7 +432,7 @@ ProjectProof 适合处理以下类型的实习或项目经历：
 
 ---
 
-## 适合谁
+## 👥 适合谁
 
 | 适合 | 不适合 |
 | --- | --- |
@@ -434,7 +444,9 @@ ProjectProof 适合处理以下类型的实习或项目经历：
 
 ---
 
-## Before / After
+<a id="before-after"></a>
+
+## 🔎 Before / After
 
 <details open>
 <summary>Agent 项目</summary>
@@ -525,7 +537,7 @@ ProjectProof 适合处理以下类型的实习或项目经历：
 
 ---
 
-## 示例与文档
+## 📚 示例与文档
 
 | 类型 | 文件 |
 | --- | --- |
@@ -541,7 +553,7 @@ ProjectProof 适合处理以下类型的实习或项目经历：
 
 ---
 
-## 目录结构
+## 🗂️ 目录结构
 
 ```text
 .
@@ -562,7 +574,7 @@ ProjectProof 适合处理以下类型的实习或项目经历：
 
 ---
 
-## 项目原则
+## 🧱 项目原则
 
 ```text
 不虚构公司规模
@@ -577,7 +589,7 @@ ProjectProof 的目标不是把项目“包装得更大”，而是把真实项�
 
 ---
 
-## Roadmap
+## 🗺️ Roadmap
 
 - [ ] 增加更多真实 before / after 脱敏案例
 - [ ] 增加更多岗位专项追问分支
@@ -588,7 +600,7 @@ ProjectProof 的目标不是把项目“包装得更大”，而是把真实项�
 
 ---
 
-## 贡献
+## 🤝 贡献
 
 欢迎贡献真实但脱敏的案例、追问分支和评测样例。  
 请先阅读 `CONTRIBUTING.md`。
@@ -603,12 +615,12 @@ ProjectProof 的目标不是把项目“包装得更大”，而是把真实项�
 
 ---
 
-## 版本记录
+## 📄 License
 
-变更历史见：`CHANGELOG.md`。
+Apache-2.0
 
 ---
 
-## License
+## ⭐ 支持项目
 
-Apache-2.0
+如果 ProjectProof 对你有帮助，欢迎给这个项目一个 Star ✨
