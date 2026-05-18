@@ -1,0 +1,4 @@
+interface:
+  display_name: "ProjectProof for Codex"
+  short_description: "把小厂实习项目打磨成大厂可面材料"
+  default_prompt: "使用 ProjectProof for Codex。请根据我的目标 JD、简历和真实项目情况，先做 JD-to-Resume Mapping、真实性边界、Evidence Contract、Production Gap 和 SP/SSP 评分；再给出补证据计划、简历 bullet 三档、危险/可过/强回答和大厂项目深挖面试包。"
