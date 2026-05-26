@@ -13,7 +13,9 @@ It does not fabricate experience. It helps you put real projects back into evide
 ![Method](https://img.shields.io/badge/method-evidence--bound-orange)
 ![Status](https://img.shields.io/badge/status-active-success)
 
-[Quick Start](#quick-start) · [Why ProjectProof](#why-projectproof) · [Installation](#installation) · [Usage](#usage) · [Outputs](#outputs) · [Before / After](#before--after) · [中文](README.md)
+Languages: [English](README_EN.md) | [中文](README.md)
+
+[Start Here](START_HERE.md) · [Quick Start](#quick-start) · [Why ProjectProof](#why-projectproof) · [Installation](#installation) · [Usage](#usage) · [Outputs](#outputs) · [Before / After](#before--after) · [中文](README.md)
 
 </div>
 
@@ -617,6 +619,44 @@ Useful contributions include:
 ## 📄 License
 
 Apache-2.0
+
+---
+
+## InterviewProof-RAG Bridge
+
+ProjectProof can be used as the project-strengthening stage after InterviewProof-RAG.
+
+These two projects are sibling projects, not a parent-child dependency. You can use either one independently, or use them together as one interview-prep workflow.
+
+Related repositories:
+
+- ProjectProof: [YingaoWang-casia/shushu-ProjectProof](https://github.com/YingaoWang-casia/shushu-ProjectProof)
+- InterviewProof-RAG: [YingaoWang-casia/shushu-InterviewProof-RAG](https://github.com/YingaoWang-casia/shushu-InterviewProof-RAG)
+
+Recommended split:
+
+```text
+InterviewProof-RAG = retrieve source-grounded interview questions and stress-test the project
+ProjectProof = turn exposed gaps into Truth Boundary, Evidence Contract, resume-claim decisions, and evidence plans
+```
+
+Bridge input files:
+
+```text
+reports/projectproof_input.md
+reports/interview_review_report.md
+reports/mock_session.jsonl
+```
+
+When using an InterviewProof-RAG bridge report, ask Codex:
+
+```text
+Use ProjectProof.
+Read reports/projectproof_input.md.
+First perform Truth Boundary, Evidence Contract, Production Gap, and SP/SSP Scorecard.
+Do not polish the resume first.
+Downgrade any claim that lacks evidence.
+```
 
 ---
 
