@@ -13,7 +13,9 @@
 ![Method](https://img.shields.io/badge/method-evidence--bound-orange)
 ![Status](https://img.shields.io/badge/status-active-success)
 
-[快速开始](#quick-start) · [为什么需要它](#why-projectproof) · [安装](#installation) · [使用方式](#usage) · [输出内容](#outputs) · [Before / After](#before-after) · [English](README_EN.md)
+语言版本：[中文](README.md) | [English](README_EN.md)
+
+[新手入口](START_HERE.md) · [快速开始](#quick-start) · [为什么需要它](#why-projectproof) · [安装](#installation) · [使用方式](#usage) · [输出内容](#outputs) · [Before / After](#before-after) · [English](README_EN.md)
 
 </div>
 
@@ -613,12 +615,50 @@ ProjectProof 的目标不是把项目“包装得更大”，而是把真实项�
 
 ---
 
-## 📄 License
+## InterviewProof-RAG 桥接
 
-Apache-2.0
+ProjectProof 可以作为 InterviewProof-RAG 之后的项目补强阶段使用。
+
+这两个项目是兄弟项目，不是父子依赖。你可以单独使用任意一个，也可以把它们组合成一套完整的面试准备流程。
+
+相关仓库：
+
+- ProjectProof: [YingaoWang-casia/shushu-ProjectProof](https://github.com/YingaoWang-casia/shushu-ProjectProof)
+- InterviewProof-RAG: [YingaoWang-casia/shushu-InterviewProof-RAG](https://github.com/YingaoWang-casia/shushu-InterviewProof-RAG)
+
+推荐分工：
+
+```text
+InterviewProof-RAG = 检索有来源依据的面试问题，并对项目进行压力测试
+ProjectProof = 把暴露出来的缺口转成 Truth Boundary、Evidence Contract、简历表达决策和补证据计划
+```
+
+桥接输入文件：
+
+```text
+reports/projectproof_input.md
+reports/interview_review_report.md
+reports/mock_session.jsonl
+```
+
+使用 InterviewProof-RAG 生成的桥接报告时，可以这样让 Codex 接着处理：
+
+```text
+使用 ProjectProof。
+读取 reports/projectproof_input.md。
+请先做 Truth Boundary、Evidence Contract、Production Gap 和 SP/SSP Scorecard。
+不要先润色简历。
+缺少证据的 claim 必须降级。
+```
 
 ---
 
 ## ⭐ 支持项目
 
 如果 ProjectProof 对你有帮助，欢迎给这个项目一个 Star ✨
+
+---
+
+## 📄 License
+
+Apache-2.0
