@@ -4,7 +4,7 @@
 
 **项目证据官：把真实的小厂项目，打磨成能投、能讲、能抗追问的大厂面试材料。**
 
-面向 AI / Agent / RAG / 算法 / 数据 / 前后端实习项目的 Codex Skill。  
+面向 AI / Agent / RAG / 算法 / 数据 / 前后端实习项目的 Codex Skill。
 它不负责编造经历，而是帮助你把真实项目放回证据、边界、工程闭环和面试追问里。
 
 [![License](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
